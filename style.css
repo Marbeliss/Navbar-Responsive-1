@@ -1,0 +1,76 @@
+/*1-@import url(colocas tipografia);*/
+
+/*2-En CSS, el asterisco (*) se utiliza como un selector universal. Veamos por qué se coloca en primer lugar y cómo afecta a los estilos: */
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: "Questrial", sans-serif; 
+    font-size: 16px; /*Tamaño de letra por defecto*/
+    box-sizing: border-box;  /*inherit; a propiedad CSS nos permite incluir el relleno y el borde en la anchura y la altura totales de un elemento.*/
+  }
+  
+  body {
+      margin: 0; /* Elimina los márgenes predeterminados */
+      padding: 0; /* Elimina el relleno predeterminado */
+      background-color: #8C52FF; /* Establece un color de fondo */
+      font-family: 'Arial', sans-serif; /* Establece la tipografía */
+      color: #F8F5FF; /* Establece el color del texto */
+    } 
+  
+  
+  
+  
+  /*¿Qué hace la propiedad box-sizing?
+  La propiedad box-sizing indica cómo se deben calcular las medidas de un elemento.
+  Por defecto, CSS considera que el ancho y alto de la caja son las propiedades width y height.
+  Esto significa que si añades un padding o un border, el tamaño de renderizado de la caja será: width + padding + border.*/
+  
+  
+  /*fondo que tambien puede ser header dependiendo donde creaste el navbar*/
+  
+  h1{
+      /*clase solo se le coloca punto y las etiquetas no ya que son nativas*/
+      font-size: 25px; /*Tamaño de letra*/
+      line-height: .9; /*Medidas entre lineas se mide en 1*/
+       
+      color: #F8F5FF;
+  }
+  
+  p{/*clase solo se le coloca punto y las etiquetas no ya que son nativas*/
+      font-size: 15px; /*Tamaño de letra*/
+      line-height: 1.2; /*Medidas entre lineas se mide en 1*/ 
+      letter-spacing:1px; /*para separar las letras*/
+      color: #F8F5FF;
+  }
+  
+  
+  
+  /*barra de navegacion*/
+   
+  .navbar{
+  
+      
+  }
+  
+  .bg{
+      background-color: #192028;
+  }   
+  
+  .navbar{
+      padding: 0;
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: none;
+  }
+  
+  
+  @media (max-width:767px) {
+      .ul-bg{
+          background-color: #FEE57F;
+      }
+  }
+  
+  nav .nav-item a:hover{
+      color: #8C52FF !important
+  }
